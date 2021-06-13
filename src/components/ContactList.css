@@ -1,0 +1,147 @@
+        
+.navbar{
+	background-color: #3F51B6 !important;
+}
+.cardContainer {
+	 padding: 0 129px;
+	 margin-top: 65px;
+}
+ .cardDiv {
+	 display: flex;
+	 justify-content: flex-start;
+}
+ .cardDiv .extraDetails {
+	 padding: 14px 16px 8px 12px;
+}
+ .cardDiv img {
+	 width: 156px;
+	 height: 220px;
+	 border-top-left-radius: 13px;
+	 border-bottom-left-radius: 13px;
+}
+ .card-body {
+	 padding: 0;
+}
+ .box {
+	 box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+	 border-radius: 13px;
+	 margin: 15px 0 !important;
+	 border: none;
+}
+ .box a:hover {
+	 text-decoration: none;
+}
+ .box .card-title {
+	 font-size: 23px;
+	 color: #484e55;
+	 min-height: 25px;
+}
+ .box .card-subtitle div p:nth-child(1) {
+	 font-size: 14px;
+	 color: #899eb0;
+	 margin-bottom: 5px;
+}
+ .box .card-subtitle div p:nth-child(2) {
+	 font-size: 14px;
+	 color: #484e55;
+	 margin-bottom: 10px;
+}
+ .box .card-subtitle div:nth-child(2) {
+	 margin-top: 9px;
+}
+ .box .card-text {
+	 position: absolute;
+	 right: 30px;
+	 color: #484e55;
+	 font-size: 12px;
+	 text-decoration: underline;
+	 bottom: 25px;
+}
+ .infinite-scroll-component {
+	 overflow: hidden !important;
+}
+ .cardLoader {
+	 text-align: center;
+	 font: 30px;
+	 padding: 15px;
+	 border: 1px solid #3F51B6;
+	 color: #3F51B6;
+}
+ @media (max-width: 575.98px) {
+	 .cardContainer {
+		 padding: 0 30px;
+	}
+	 .box .card-title {
+		 font-size: 16px;
+		 min-height: 25px;
+	}
+	 .box .card-text {
+		 bottom: 17px;
+	}
+	 .cardDiv img {
+		 width: 100px;
+		 height: 150px;
+	}
+	 .cardDiv .extraDetails {
+		 padding: 8px;
+	}
+	 .mb-2 {
+		 margin-bottom: 0px !important;
+	}
+	 .my-2 {
+		 margin-bottom: 0px !important;
+	}
+}
+ @media (min-width: 576px) and (max-width: 992px) {
+	 .cardContainer {
+		 padding: 0 72px;
+	}
+	 .box .card-title {
+		 font-size: 18px;
+		 min-height: 25px;
+	}
+	 .box .card-text {
+		 bottom: 18px;
+	}
+	 .cardDiv img {
+		 width: 120px;
+		 height: 180px;
+	}
+	 .cardDiv .extraDetails {
+		 padding: 8px;
+	}
+	 .mb-2 {
+		 margin-bottom: 0px !important;
+	}
+	 .my-2 {
+		 margin-bottom: 0px !important;
+	}
+}
+ @media (min-width: 993px) and (max-width: 1199.98px) {
+	 .cardContainer {
+		 padding: 0 95px;
+	}
+}
+ @media (min-width: 1201px) and (max-width: 1399.98px) {
+	 .box .card-title {
+		 font-size: 18px;
+		 min-height: 25px;
+	}
+	 .box .card-text {
+		 bottom: 10px;
+	}
+	 .cardDiv img {
+		 width: 120px;
+		 height: 180px;
+	}
+	 .cardDiv .extraDetails {
+		 padding: 8px;
+	}
+	 .mb-2 {
+		 margin-bottom: 0px !important;
+	}
+	 .my-2 {
+		 margin-bottom: 0px !important;
+	}
+}
+ 

@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
+import {
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
+
+import { Container } from 'react-bootstrap';
 import './App.css';
+import LoginForm from './components/LoginForm'
+import ContactList from './components/ContactList'
 
 function App() {
+  const loggedInUser = localStorage.getItem('user');
+  const foundUser = JSON.parse(loggedInUser);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Switch>
+          <Route
+            exact
+            path="/home"
+            render={() => {
+              console.log(foundUser,'hjgj')
+                return (
+                    localStorage.getItem('user') ?
+                    <ContactList />  :
+                    <Redirect to="/" /> 
+                )
+            }}
+          />
+
+          <Route path="/">
+            <LoginForm />
+          </Route>
+        </Switch>
   );
 }
 
