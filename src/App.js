@@ -11,19 +11,22 @@ import './App.css';
 import LoginForm from './components/LoginForm'
 import ContactList from './components/ContactList'
 
-function App() {
-  const loggedInUser = localStorage.getItem('user');
-  const foundUser = JSON.parse(loggedInUser);
+const App = () => {
   
+  const isAuth = () => {
+    if (localStorage.getItem('user')) {
+      return true;
+    }
+    return false;
+  }
   return (
         <Switch>
           <Route
             exact
             path="/home"
             render={() => {
-              console.log(foundUser,'hjgj')
                 return (
-                    localStorage.getItem('user') ?
+                    isAuth() ?
                     <ContactList />  :
                     <Redirect to="/" /> 
                 )
