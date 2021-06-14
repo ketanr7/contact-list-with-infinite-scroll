@@ -41,7 +41,7 @@
  .box .card-title {
 	 font-size: 23px;
 	 color: #484e55;
-	 min-height: 25px;
+	 /*min-height: 25px;*/
 	 margin-bottom: 0px;
 }
  .box .card-subtitle div p:nth-child(1) {
@@ -85,7 +85,7 @@
  	}
 	 .box .card-title {
 		 font-size: 16px;
-		 min-height: 25px;
+		 /*min-height: 25px;*/
 	}
 	 .box .card-text {
 		 bottom: 17px;
@@ -112,7 +112,7 @@
 	}
 	 .box .card-title {
 		 font-size: 18px;
-		 min-height: 25px;
+		 /*min-height: 25px;*/
 	}
 	 .box .card-text {
 		 bottom: 18px;
@@ -141,7 +141,7 @@
  @media (min-width: 1201px) and (max-width: 1399.98px) {
 	 .box .card-title {
 		 font-size: 18px;
-		 min-height: 25px;
+		 /*min-height: 25px;*/
 	}
 	 .box .card-text {
 		 bottom: 10px;
