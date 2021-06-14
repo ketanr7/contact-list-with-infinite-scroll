@@ -67,5 +67,11 @@ background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  1
 	box-shadow: none;
 }
 
+@media (max-width: 575.98px) {
+	.formExample{
+		padding: 20px;
+	}
+}
+
 
         

@@ -35,7 +35,7 @@ const LoginForm = () => {
 	return (
 		<Container fluid className="mainContainer">
 		    <Row>
-			    <Col xs={10} md={6} lg={4} className="formCol">
+			    <Col xs={12} md={6} lg={4} className="formCol">
 			    	<Form noValidate onSubmit={handleSubmit} className="formExample">
           				<Row>
           					<h2>Sign in</h2>

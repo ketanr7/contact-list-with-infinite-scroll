@@ -32,7 +32,7 @@ export default function contactListReducer(state = initialState, action) {
 
 export function getContactsList({ page }) {
   return async function getMoviesForCardsThunk(dispatch, getState) {
-    const params = { page: page,results:10 }
+    const params = { page: page,results:30 }
     const response = await axios.get('https://randomuser.me/api/', { params: params })
     console.log(response.data.results)
     if (response) {

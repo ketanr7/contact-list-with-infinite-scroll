@@ -54,22 +54,11 @@ const ContactList = (props) => {
                 <Card className="box"  >
                     <Card.Body>
                       <div className="cardDiv">
-                        <div><img src={card.picture.large !== 'N/A' ? card.picture.large : null} alt={card.login}/></div>
                         <div className="extraDetails">
                           <Card.Title>{card.name.first} {card.name.last}</Card.Title>
-                          <Card.Subtitle className="mb-2 text-muted">
-                            <div>
-                              <p>Country</p>
-                              <p>{card.location.country}</p>
-                            </div>
-                            <div>
-                              <p>City</p>
-                              <p>{card.location.city}</p>
-                            </div>
-                          </Card.Subtitle>
-                          
-                         
                         </div>
+                      <div className="imgDiv"><img src={card.picture.large !== 'N/A' ? card.picture.large : null} alt={card.login}/></div>
+
                       </div>
                     </Card.Body>
                   
